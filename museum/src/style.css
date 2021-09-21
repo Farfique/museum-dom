@@ -9,9 +9,18 @@ body {
   background-color: #363636;
 }
 
-h1 { color: #e6c300; }
+h1 {
+  color: #e6c300;
+}
 
 img {
   width: 90vw;
   max-width: 256px;
+}
+
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  border: 1px solid red;
 }
