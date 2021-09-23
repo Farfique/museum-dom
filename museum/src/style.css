@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .dark {
   background-color: #030303;
   color: #ffffff;
@@ -71,6 +75,10 @@ h2 {
   letter-spacing: 5px;
   text-align: left;
   text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 0;
 }
 
 h3 {
@@ -160,6 +168,7 @@ p {
 }
 
 .section {
+  width: 100%;
   padding-top: 75px;
   padding-bottom: 75px;
 
@@ -196,4 +205,30 @@ p {
   display: block;
   text-decoration: none;
   color: inherit;
+}
+
+/* explore */
+.explore-container {
+  display: flex;
+  gap: 60px;
+}
+
+.explore-paragraph {
+  margin-top: 25px;
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text-emphasize-brown {
+  color: #caaa7d;
+}
+
+.explore-picture {
+  width: 720px;
+  height: 700px;
 }
