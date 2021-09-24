@@ -1,18 +1,13 @@
-import image from './images/lazy.png';
-
-const createImage = (src) => new Promise((res, rej) => {
-  const img = new Image();
-  img.onload = () => res(img);
-  img.onerror = rej;
-  img.src = src;
+const playerTimeRange = document.querySelector('.player-time-range');
+  
+playerTimeRange.addEventListener('input', function () {
+  const value = this.value;
+  this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #ffffff ${value}%, #ffffff 100%)`
 });
 
-async function render() {
-  const subHeader = document.createElement('h2');
-  subHeader.innerHTML = 'This elements was created by js';
-  const myImage = await createImage(image);
-  document.body.appendChild(subHeader);
-  document.body.appendChild(myImage);
-}
-
-render();
+const playerVolumeRange = document.querySelector('.player-volume-range');
+  
+playerVolumeRange.addEventListener('input', function() {
+  const value = this.value;
+  this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #ffffff ${value}%, #ffffff 100%)`
+})
