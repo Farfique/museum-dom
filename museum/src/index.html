@@ -211,19 +211,74 @@
                         <img class="gallery-image" src="./assets/img/gallery/galery15.jpg" alt="">
                         <img class="gallery-image" src="./assets/img/gallery/galery12.jpg" alt="">
                     </div>
-
-
-
-
                 </div>
                 <div class="shadow-bottom"></div>
             </div>
         </section>
-        <section class="section" id="tickets">
-            <div class="container"></div>
+        <section class="section light" id="tickets">
+            <div class="container">
+                <h2 class="border-bottom">Buy tickets</h2>
+                <div class="buy-container">
+                    <img class="buy-img" src="assets/img/buy/Rectangle.jpg" alt="">
+                    <form class="buy-form">
+                        <fieldset class="buy-fieldset ticket-type-set">
+                            <h4 class="fw700">Ticket Type</h4>
+                            <p class="buy-paragraph">
+                                <input type="radio" name="ticket-type" value="permanent" id="permanent-exhibition"
+                                    checked>
+                                <label class="ticket-type-label" for="permanent-exhibition">Permanent exhibition</label>
+                            </p>
+                            <p class="buy-paragraph">
+                                <input type="radio" name="ticket-type" value="temporary" id="temporary-exhibition">
+                                <label class="ticket-type-label" for="temporary-exhibition">Temporary exhibition</label>
+                            </p>
+                            <p class="buy-paragraph">
+                                <input type="radio" name="ticket-type" value="combined" id="combined-admission">
+                                <label class="ticket-type-label" for="combined-admission">Combined Admission</label>
+                            </p>
+                        </fieldset>
+                        <fieldset class="buy-fieldset amount-fieldset">
+                            <h4 class="fw700">Amount</h4>
+                            <p class="buy-paragraph">Basic 18+</p>
+                            <div class="number-container">
+                                <button class="number-button" onclick="this.nextElementSibling.stepDown()">–</button>
+                                <input type="number" min="0" max="20" value="1" readonly
+                                    class="number-input basic-amount">
+                                <button class="number-button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            </div>
+                            <p class="buy-paragraph">Senior 65+</p>
+                            <div class="number-container">
+                                <button class="number-button" onclick="this.nextElementSibling.stepDown()">–</button>
+                                <input type="number" min="0" max="20" value="1" readonly
+                                    class="number-input senior-amount">
+                                <button class="number-button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            </div>
+                            <h4 class="fw700">Total €220</h4>
+                            <button class="black-button">Buy Now</button>
+
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+            <div class="parallax"></div>
+
         </section>
-        <section class="section" id="contacts">
-            <div class="container"></div>
+        <section class="section light" id="contacts">
+            <div class="container">
+                <h2 class="border-bottom">Contacts</h2>
+                <div class="contacts-content">
+                    <div class="contact-info">
+                        <h4 class="fw700 mb50">Palais Royal Musee du Louvre</h4>
+                        <p>address: 75001 Paris, France</p>
+                        <p>phone: <tel>+33(0) 1 40 20 50 50</tel>
+                        </p>
+                        <p>mail: <mailto>info@louvre.fr</mailto>
+                        </p>
+                    </div>
+                    <img class="contacts-map" src="images/map.jpg" alt="map">
+                </div>
+            </div>
         </section>
 
     </main>
