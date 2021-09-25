@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>museum</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700&display=swap"
@@ -16,29 +16,26 @@
 
 <body class="dark">
     <header class="page-header dark">
-        <div class="logo-container">
-            <div class="logo-svg"></div>
-            <div class="logo-text"></div>
-        </div>
+        <div class="logo-svg"></div>
         <nav class="main-menu">
             <ul class="main-menu-list">
                 <li class="menu-item">
-                    <a href="" class="menu-link">Visiting</a>
+                    <a href="#visiting" class="menu-link">Visiting</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Explore</a>
+                    <a href="#explore" class="menu-link">Explore</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Video</a>
+                    <a href="#video" class="menu-link">Video</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Gallery</a>
+                    <a href="#gallery" class="menu-link">Gallery</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Tickets</a>
+                    <a href="#tickets" class="menu-link">Tickets</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Contacts</a>
+                    <a href="#contacts" class="menu-link">Contacts</a>
                 </li>
             </ul>
 
@@ -134,7 +131,8 @@
             <div class="container explore-container">
                 <div class="explore-content">
                     <h2 class="border-bottom">Picture explore</h2>
-                    <p class="explore-paragraph">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist
+                    <p class="explore-paragraph first-paragraph">Las Meninas is a 1656 painting by Diego Velázquez, the
+                        leading artist
                         of the Spanish Golden Age.
                     </p>
                     <p class="explore-paragraph">It was cleaned in 1984 to remove a <span
@@ -222,7 +220,7 @@
                     <img class="buy-img" src="assets/img/buy/Rectangle.jpg" alt="">
                     <form class="buy-form">
                         <fieldset class="buy-fieldset ticket-type-set">
-                            <h4 class="fw700">Ticket Type</h4>
+                            <h4 class="fw700 mb50">Ticket Type</h4>
                             <p class="buy-paragraph">
                                 <input type="radio" name="ticket-type" value="permanent" id="permanent-exhibition"
                                     checked>
@@ -238,23 +236,32 @@
                             </p>
                         </fieldset>
                         <fieldset class="buy-fieldset amount-fieldset">
-                            <h4 class="fw700">Amount</h4>
-                            <p class="buy-paragraph">Basic 18+</p>
-                            <div class="number-container">
-                                <button class="number-button" onclick="this.nextElementSibling.stepDown()">–</button>
-                                <input type="number" min="0" max="20" value="1" readonly
-                                    class="number-input basic-amount">
-                                <button class="number-button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            <h4 class="fw700 mb25 right">Amount</h4>
+                            <div class="age-container">
+                                <p class="buy-paragraph">Basic 18+</p>
+                                <div class="number-container">
+                                    <button class="number-button"
+                                        onclick="this.nextElementSibling.stepDown()">–</button>
+                                    <input type="number" min="0" max="20" value="1" readonly
+                                        class="number-input basic-amount">
+                                    <button class="number-button"
+                                        onclick="this.previousElementSibling.stepUp()">+</button>
+                                </div>
                             </div>
-                            <p class="buy-paragraph">Senior 65+</p>
-                            <div class="number-container">
-                                <button class="number-button" onclick="this.nextElementSibling.stepDown()">–</button>
-                                <input type="number" min="0" max="20" value="1" readonly
-                                    class="number-input senior-amount">
-                                <button class="number-button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            <div class="age-container">
+                                <p class="buy-paragraph">Senior 65+</p>
+                                <div class="number-container">
+                                    <button class="number-button"
+                                        onclick="this.nextElementSibling.stepDown()">–</button>
+                                    <input type="number" min="0" max="20" value="1" readonly
+                                        class="number-input senior-amount">
+                                    <button class="number-button"
+                                        onclick="this.previousElementSibling.stepUp()">+</button>
+                                </div>
                             </div>
-                            <h4 class="fw700">Total €220</h4>
-                            <button class="black-button">Buy Now</button>
+
+                            <h4 class="fw700 total right">Total €220</h4>
+                            <button class="black-button menu-link">Buy Now</button>
 
                         </fieldset>
 
@@ -270,10 +277,10 @@
                 <div class="contacts-content">
                     <div class="contact-info">
                         <h4 class="fw700 mb50">Palais Royal Musee du Louvre</h4>
-                        <p>address: 75001 Paris, France</p>
-                        <p>phone: <tel>+33(0) 1 40 20 50 50</tel>
+                        <p class="contact-text mb25">address: 75001 Paris, France</p>
+                        <p class="contact-text mb25">phone: <tel>+33(0) 1 40 20 50 50</tel>
                         </p>
-                        <p>mail: <mailto>info@louvre.fr</mailto>
+                        <p class="contact-text">mail: <mailto>info@louvre.fr</mailto>
                         </p>
                     </div>
                     <img class="contacts-map" src="images/map.jpg" alt="map">
@@ -283,6 +290,69 @@
 
     </main>
     <footer class="page-footer">
+        <div class="footer-navigation">
+            <div class="footer-menu">
+                <div class="logo-svg"></div>
+                <nav class="footer-nav-menu">
+                    <ul class="footer-menu-list">
+                        <li class="menu-item">
+                            <a href="#visiting" class="menu-link">Visiting</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#explore" class="menu-link">Explore</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#video" class="menu-link">Video</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#gallery" class="menu-link">Gallery</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#tickets" class="menu-link">Tickets</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#contacts" class="menu-link">Contacts</a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="socials">
+                <ul class="socials-list">
+                    <li class="socials-item">
+                        <a href="" class="socials-link">
+                            <img src="assets/svg/Frame.svg" alt="social icon" class="socials-img">
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="" class="socials-link">
+                            <img src="assets/svg/Frame-1.svg" alt="social icon" class="socials-img">
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="" class="socials-link">
+                            <img src="assets/svg/Frame-2.svg" alt="social icon" class="socials-img">
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="" class="socials-link">
+                            <img src="assets/svg/Frame-3.svg" alt="social icon" class="socials-img">
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="" class="socials-link">
+                            <img src="assets/svg/Frame-4.svg" alt="social icon" class="socials-img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="separation-line"></div>
+        <div class="footer-rights">
+            <p class="menu-link">&copy;2021</p>
+            <p class="menu-link">The Rolling Scopes School</p>
+            <a class="menu-link" target="_blank" href="https://github.com/Farfique">Farfique</a>
+        </div>
 
     </footer>
     <script src="./index.js"></script>
