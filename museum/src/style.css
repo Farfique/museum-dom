@@ -626,12 +626,18 @@ input[type="radio"]:checked::before {
 }
 
 .contact-text {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+
   font-family: Roboto, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 300;
   line-height: 26px;
   text-align: left;
+  text-decoration: none;
+  color: inherit;
 }
 
 .mb50 {
