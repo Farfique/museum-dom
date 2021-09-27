@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -23,6 +24,7 @@ html {
 
 .page-header {
   width: 1440px;
+  height: 150px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -52,7 +54,7 @@ html {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  gap: 55px;
+  width: 775px;
   padding: 0;
 }
 
@@ -71,6 +73,7 @@ html {
 /* headers */
 h1,
 h2 {
+  margin-top: 0;
   font-family: Forum, serif;
   font-size: 80px;
   font-style: normal;
@@ -82,13 +85,9 @@ h2 {
   margin-bottom: 25px;
 }
 
-h2 {
-  margin-top: 0;
-}
-
 h3 {
   position: relative;
-  margin-top: 25px;
+  margin-top: 22px;
   margin-bottom: 22px;
 
   font-family: Forum, serif;
@@ -143,7 +142,7 @@ p {
   font-size: 18px;
   font-style: normal;
   font-weight: 200;
-  line-height: 21px;
+  line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -187,6 +186,11 @@ p {
 }
 
 /* welcome section */
+#welcome {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .welcome-container {
   background-image: url("images/pagination.jpg"), url("assets/img/main.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -206,11 +210,13 @@ p {
 .virtual-gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   column-gap: 50px;
   row-gap: 75px;
   padding: 0;
   margin-top: 75px;
+  margin-bottom: 0;
 }
 
 .virtual-gallery-link {
@@ -226,7 +232,8 @@ p {
 }
 
 .explore-paragraph {
-  margin-top: 25px;
+  margin-top: 24px;
+  padding-right: 1px;
   font-family: Roboto, sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -245,6 +252,7 @@ p {
 }
 
 .explore-picture {
+  margin-top: 15px;
   width: 720px;
   height: 700px;
 }
@@ -262,7 +270,7 @@ p {
 
 .video-paragraph {
   width: 720px;
-  margin-top: 3px;
+  margin-top: 6px;
   font-family: Roboto, sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -284,7 +292,10 @@ p {
   height: 85px;
 
   display: flex;
-  justify-content: space-around;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
   align-items: center;
   background-color: #000000;
 }
@@ -357,7 +368,22 @@ p {
   justify-content: space-between;
 }
 
+.playlist-slider {
+  display: block;
+  content: "";
+  background-image: url("images/video-slider-pagination.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 12px;
+  margin: 36px auto 0 auto;
+  
+}
+
 /* gallery */
+#gallery {
+  padding-bottom: 0;
+}
+
 .gallery-container {
   box-shadow: inset 0px -10px 30px #000000;
   position: relative;
@@ -393,7 +419,7 @@ p {
 }
 
 .gallery-image {
-  width: 456;
+  width: 456px;
   height: auto;
 }
 
@@ -403,6 +429,15 @@ p {
   display: grid;
   grid-template-columns: 720px 1fr;
   column-gap: 60px;
+}
+
+.buy-tickets-header {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.1px;
 }
 
 .buy-form {
@@ -422,7 +457,13 @@ p {
 
 .total {
   margin-top: 50px;
+  text-align: right;
 }
+
+.space-total, .total-sum {
+letter-spacing: 1.5px;
+}
+
 .black-button {
   display: block;
   width: 175px;
@@ -454,12 +495,13 @@ p {
   line-height: 38px;
   letter-spacing: 0em;
   text-align: center;
+  padding: 0;
 }
 
 .number-input {
   width: 50px;
   border: none;
-  line-height: 50px;
+
 
   font-family: Roboto, sans-serif;
   font-size: 22px;
@@ -468,6 +510,7 @@ p {
   line-height: 26px;
   letter-spacing: 0em;
   text-align: center;
+  padding-left: 15px;
 }
 
 .number-container {
@@ -491,14 +534,61 @@ p {
   font-size: 22px;
   font-style: normal;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 15px;
+
+}
+
+.buy-options {
+  margin-bottom: 20px;
+}
+
+.buy-legend {
+  margin-bottom: 10px;
 }
 
 .ticket-type-label {
   margin-bottom: 25px;
+  padding-left: 13px;
+}
+
+input[type="radio"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #000000;
+  margin: 0;
+  margin-right: 5px;
+  padding: 0;
+
+  position: relative;
+  top: 0;
+
+
+}
+
+input[type="radio"]:checked{
+  position: relative;
+  width: 17px;
+  height: 17px;
+  border: 1px solid black;
+  background-color:black;
+}
+
+input[type="radio"]:checked::before {
+  position: absolute;
+  z-index: 400;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 7px solid #ffea00;
 }
 
 .parallax {
@@ -524,6 +614,15 @@ p {
 
 .contact-info {
   width: 282px;
+}
+
+.contacts-header{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.1px;
 }
 
 .contact-text {
@@ -560,7 +659,7 @@ p {
   height: 133px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 75px;
+  padding-top: 82px;
   padding-bottom: 50px;
 
   display: flex;
@@ -582,8 +681,12 @@ p {
   padding: 0;
   margin: 4px 0 0 0;
   row-gap: 25px;
-  column-gap: 150px;
+  column-gap: 165px;
   height: 128px;
+}
+
+.socials {
+  margin-bottom: 5px;
 }
 
 .socials-list {
@@ -601,7 +704,7 @@ p {
   width: 48px;
   height: 48px;
   box-sizing: border-box;
-  border: 1px solid #ffffff;
+  border: 0.5px solid #ffffff;
   border-radius: 50px;
   text-decoration: none;
   color: inherit;
@@ -625,7 +728,7 @@ p {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 50px;
+  padding-top: 38px;
   padding-bottom: 50px;
 
   display: flex;
