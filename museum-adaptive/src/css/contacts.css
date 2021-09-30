@@ -1,0 +1,38 @@
+/* contacts */
+#contacts {
+    padding-top: 0;
+  }
+  
+  .contacts-content {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+  }
+  
+  .contact-info {
+    width: 282px;
+  }
+  
+  .contacts-header{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+  }
+  
+  .contact-text {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+  }

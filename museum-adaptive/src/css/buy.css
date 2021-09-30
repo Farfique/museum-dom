@@ -1,0 +1,177 @@
+/* Buy */
+.buy-container {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 720px 1fr;
+    column-gap: 60px;
+  }
+  
+  .buy-tickets-header {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+  }
+  
+  .buy-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buy-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  
+  .total {
+    margin-top: 50px;
+    text-align: right;
+  }
+  
+  .space-total, .total-sum {
+  letter-spacing: 1.5px;
+  }
+  
+  .black-button {
+    display: block;
+    width: 175px;
+  
+    margin-top: 60px;
+    background-color: #000000;
+  
+    border-radius: 2px;
+    color: #ffffff;
+    text-decoration: none;
+  
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  .number-button {
+    background-color: #ffffff;
+    border: none;
+  
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .number-input {
+    width: 50px;
+    border: none;
+  
+  
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-left: 15px;
+  }
+  
+  .number-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    padding: 12px 14px;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+  }
+  
+  .age-container {
+    margin-left: auto;
+    width: 150px;
+  }
+  
+  .buy-paragraph {
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  
+  }
+  
+  .buy-options {
+    margin-bottom: 20px;
+  }
+  
+  .buy-legend {
+    margin-bottom: 10px;
+  }
+  
+  .ticket-type-label {
+    margin-bottom: 25px;
+    padding-left: 13px;
+  }
+  
+  input[type="radio"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+  
+    border: 2px solid #000000;
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+  
+    position: relative;
+    top: 0;
+  
+  
+  }
+  
+  input[type="radio"]:checked{
+    position: relative;
+    width: 17px;
+    height: 17px;
+    border: 1px solid black;
+    background-color:black;
+  }
+  
+  input[type="radio"]:checked::before {
+    position: absolute;
+    z-index: 400;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 7px solid #ffea00;
+  }
+  
+  .parallax {
+    width: 100%;
+    height: 400px;
+    margin-top: 75px;
+  
+    background-image: url("../assets/img/buy/parallax.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }

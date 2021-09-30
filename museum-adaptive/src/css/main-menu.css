@@ -1,0 +1,131 @@
+.page-header {
+  width: 1440px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo-svg {
+  width: 199px;
+  height: 33px;
+  background-image: url("../assets/svg/logo.svg");
+}
+
+.logo-text {
+  text-transform: uppercase;
+  font-family: Forum;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 5px;
+  text-align: left;
+}
+
+
+/* Main menu */
+
+.main-menu {
+  position: relative;
+}
+
+.main-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 775px;
+    padding: 0;
+  }
+  
+  .menu-link {
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #menu__toggle, #menu-btn{
+    display: none;
+}
+
+  @media (max-width: 1480px){
+    .page-header {
+      margin-left: 20px;
+      margin-right: 20px;
+      height: 130px;
+      width: auto;
+    }
+
+    .main-menu-list {
+      visibility: hidden;
+      position: absolute;
+      top: 150px;
+      left: 0;
+      width: 297px;
+      height: 585px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      background-color: #000000;
+    }
+
+    .menu-item {
+      width: 176px;
+      padding: 12px 0 12px 55px;
+      box-sizing: border-box;
+      background-image: url("../assets/svg/main-menu-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    .menu-link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 2px;
+    }
+
+    #menu__toggle {
+      display: block;
+      opacity: 0;
+    }
+
+    #menu-btn{
+        display:block;
+        width: 32px;
+        height: 24px;
+        background-image: url("../assets/svg/burger-open.svg");
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #menu__toggle:checked ~ #menu-btn {
+        background-image: url("../assets/svg/burger-close.svg");
+    }
+
+    #menu__toggle:checked ~ .main-menu-list {
+        visibility: visible;
+        left: 0;
+      }
+  }
+
+  @media (max-width: 1023px){
+    .page-header {
+      height: 110px;
+    }
+  }

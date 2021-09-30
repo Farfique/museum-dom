@@ -1,0 +1,248 @@
+/* welcome section */
+#welcome {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .welcome-container {
+    height: 810px;
+    width: 100%;
+
+    box-sizing: border-box;
+    position: relative;
+    
+  }
+
+  .welcome-narrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 400;
+
+    height: 100%;
+    width: 700px;
+    background: linear-gradient(to right, #000000 63%, rgba(0,0,0,0) 100%);
+  }
+  
+  .welcome-content {
+
+    margin-top: 150px;
+ 
+    display: block;
+    width: 598px;
+    height: 388px;
+    
+  }
+
+  /* slider */
+  #welcome-slider {
+    margin-left: auto;
+    width: 1000px;
+    height: 810px;
+    background-color: #000000;
+
+    position: relative;
+  }
+
+  .welcome-wrapper {
+    width: 1000px;
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .welcome-wrapper .active-slide {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .slider-controls-container {
+    width: 600px;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 300;
+    padding: 0;
+    background-color: #000000;
+  }
+
+  .welcome-slider-controls{
+    width: 600px;
+    height: 120px;
+    background-color: #000000;
+    padding: 40px 75px 40px 74px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .welcome-pagination-fraction {
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 40px;
+    height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  .welcome-pagination-fraction .welcome-current {
+    margin-right: 10px;
+  }
+
+  .welcome-pagination-fraction .welcome-total {
+    margin-left: 10px;
+  }
+
+
+  .welcome-bullets {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+  }
+  .welcome-bullets .slider-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-color: #FFFFFF;
+  }
+
+  .welcome-bullets .slider-pagination-bullet-active {
+    background-color: #D2B183;
+  }
+
+  .welcome-slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .welcome-prev {
+    display: block;
+    width: 30px;
+    height: 8px;
+    background-image: url("../assets/svg/swiper-button.svg");
+    padding: 0;
+    border: none;
+    background-color: black;
+  }
+
+  .welcome-next {
+    display: block;
+    width: 30px;
+    height: 8px;
+    background-image: url("../assets/svg/swiper-button.svg");
+    transform: rotate(180deg);
+    padding: 0;
+    border: none;
+    background-color: black;
+  }
+
+  @media (max-width: 1480px){ /*till 1024px */
+    .welcome-container {
+      width: auto;
+      height: auto;
+    }
+  
+    .welcome-narrow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 400;
+  
+      height: 100%;
+      width: 50%;
+      background: linear-gradient(to right, #000000 63%, rgba(0,0,0,0) 100%);
+    }
+    
+    .welcome-content {
+  
+      margin-top: 10%;
+  
+      display: block;
+      width: 445px;
+      height: 343px;
+      
+    }
+
+      /* slider */
+    #welcome-slider {
+      margin-left: auto;
+      width: 75%;
+      height: calc(50.5vw + 60px);
+      background-color: #000000;
+
+      position: relative;
+    }
+
+    .welcome-wrapper {
+      width: 100%;
+      height: 50.5vw;
+      overflow: hidden;
+    }
+
+    .welcome-wrapper .slide {
+      width: auto;
+      height: 100%;
+    }
+
+    .welcome-wrapper .active-slide {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .slider-controls-container {
+      width: 100%;
+      height: 120px;
+      position: relative;
+      left: 0;
+      bottom: 60px;
+    }
+
+    .welcome-slider-controls{
+      margin-left: auto;
+      margin-right: 74px;
+      width: 401px;
+      padding: 0;
+    }
+
+    .welcome-pagination-fraction {
+      font-size: 20px;
+    }
+
+    .welcome-bullets .slider-pagination-bullet {
+      width: 12px;
+      height: 12px;
+    }
+
+
+  
+
+  }
+
+  @media (max-width: 1023px){ /* 1023px - 768px */
+    #welcome-button {
+      display: none;
+    }
+
+    .welcome-container {
+      padding-top: 0;
+      background-size: contain;
+      background-position: bottom;
+    }
+
+    .welcome-narrow {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      height: fit-content;
+    }
+  }
