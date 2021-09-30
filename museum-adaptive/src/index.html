@@ -74,7 +74,7 @@
                         <img class="slide" src="assets/img/welcome/4.jpeg" alt="Welcome screen image">
                         <img class="slide" src="assets/img/welcome/5.jpeg" alt="Welcome screen image">
                     </div>
-                    <div class="slider-controls-container">
+                    <div class="slider-controls-container welcome-controls-container">
                         <div class="slider-controls welcome-slider-controls">
                             <div class="slider-pagination-fraction welcome-pagination-fraction">
                                 <span class="slider-pagination-current welcome-current">01</span><span>|</span><span class="slider-pagination-total welcome-total">05</span>
@@ -190,7 +190,10 @@
                         masterpieces such as Mona Lisa or Hammurabi's Code</p>
                 </div>
                 <div class="video-player">
-                    <div class="video"></div>
+                    <div class="video">
+                        <img class="current-video" src="assets/video/main-video.jpg" alt="">
+                        <button class="play-video-big-btn"></button>
+                    </div>
                     <div class="player-controls">
                         <button class="player-btn player-play-btn"></button>
                         <input class="player-range player-time-range" type="range" value="53" min="0" max="100"
@@ -201,24 +204,22 @@
                         <button class="player-btn player-fullscreen"></button>
                     </div>
                 </div>
-                <ul class="playlist">
-                    <li class="playlist-item">
-                        <a href="" class="playlist-item-link">
-                            <img src="./assets/video/playlist-item1.png" alt="Video" class="playlist-img">
-                        </a>
-                    </li>
-                    <li class="playlist-item">
-                        <a href="" class="playlist-item-link">
-                            <img src="./assets/video/playlist-item2.png" alt="Video" class="playlist-img">
-                        </a>
-                    </li>
-                    <li class="playlist-item">
-                        <a href="" class="playlist-item-link">
-                            <img src="./assets/video/playlist-item3.png" alt="Video" class="playlist-img">
-                        </a>
-                    </li>
-                </ul>
-                <div class="playlist-slider"></div>
+                <div class="slider" id="playlist-slider">
+                    <div class="slider-wrapper playlist-wrapper playlist">
+                        <iframe class="slide iframe-playlist-item" src="https://www.youtube.com/embed/zp1BXPX8jcU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        <iframe class="slide iframe-playlist-item" src="https://www.youtube.com/embed/Vi5D6FKhRmo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        <iframe class="slide iframe-playlist-item" src="https://www.youtube.com/embed/NOhDysLnTvY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    </div>
+
+                    <div class="slider-controls playlist-slider-controls playlist-slider">
+                        <button class="slider-button-prev playlist-prev"></button>
+                        <div class="slider-pagination-bullets playlist-bullets">
+                        </div>                               
+                        <button class="slider-button-next playlist-next"></button>                                                
+                    </div>
+                    
+                    
+                </div>
             </div>
         </section>
         <section class="section dark" id="gallery">

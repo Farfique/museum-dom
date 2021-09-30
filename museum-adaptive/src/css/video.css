@@ -22,10 +22,30 @@
   }
   
   .video {
-    width: 1440px;
-    height: 650px;
+    max-width: 1440px;
     background-color: #caaa7d;
     background-image: url("../assets/video/main-video.jpg");
+    position: relative;
+  }
+
+  .current-video {
+    width: 1440px;
+    height: 650px;
+  }
+
+  .play-video-big-btn {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    width: 220px;
+    height: 220px;
+    border: none;
+    background: none;
+    background-image: url("../assets/svg/play-video.svg");
   }
   
   .player-controls {
@@ -51,18 +71,27 @@
     height: 31px;
   
     background-image: url("../assets/svg/play-small.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   
   .player-volume-btn {
     width: 38px;
     height: 31px;
     background-image: url("../assets/svg/volume.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   
   .player-fullscreen {
     width: 35px;
     height: 35px;
     background-image: url("../assets/svg/fullscreen-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   
   .player-range {
@@ -108,27 +137,83 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .iframe-playlist-item {
+    width: 452px;
+    height: 254px;
+  }
   
   .playlist-slider {
-    display: block;
-    content: "";
-    background-image: url("../images/video-slider-pagination.png");
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
     width: 200px;
     height: 12px;
     margin: 36px auto 0 auto;
     
   }
 
+  .playlist-bullets .slider-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    content: "";
+    background-color: #999999;
+    border-radius: 50px;
+  }
+
+  .playlist-bullets .slider-pagination-bullet-active {
+    background-color: #333333;
+  }
+
+  .playlist-prev {
+    width: 10px;
+    height: 12px;
+    background: none;
+    background-image: url("../assets/svg/video-pagination-prev.svg");
+    background-repeat: no-repeat;
+    border: none;
+
+  }
+
+  .playlist-next {
+    width: 10px;
+    height: 12px;
+    background: none;
+    background-image: url("../assets/svg/video-pagination-prev.svg");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    border: none;
+
+  }
+
 
   @media (max-width: 1480px){ /*till 1024px */
+    .video-text-content {
+      margin-bottom: 10px;
+    }
+
     .video-text-content p {
       display: none;
+
     }
     .video {
       width: 100%;
       height: auto;
     }
+
+    .play-video-big-btn {
+      width: 152px;
+      height: 152px;
+      background-size: contain;
+    }
+
+    .current-video {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     .player-controls {
       width: 100%;
       height: 60px;
@@ -153,6 +238,26 @@
     .player-range::-moz-range-thumb {
       width: 13px; /* Set a specific slider handle width */
       height: 13px; /* Slider handle height */
+    }
+
+    .player-play-btn {
+      width: 23px;
+      height: 30px;
+    }
+    
+    .player-volume-btn {
+      width: 26px;
+      height: 20px;
+    }
+    .player-fullscreen {
+      width: 26px;
+      height: 26px;
+    }
+
+
+    .iframe-playlist-item {
+      width: 300px;
+      height: 170px;
     }
   }
 
