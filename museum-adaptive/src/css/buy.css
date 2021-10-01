@@ -14,6 +14,18 @@
     line-height: 33px;
     letter-spacing: 0.1px;
   }
+
+  .buy-img-container {
+    width: 720px;
+    position: relative;
+  }
+
+  .buy-img {
+    position: relative;
+    top: 0;
+    left: 0;
+
+  }
   
   .buy-form {
     display: flex;
@@ -24,6 +36,10 @@
     border: none;
     padding: 0;
     margin: 0;
+  }
+
+  .buy-amount-header {
+    margin-bottom: 25px;
   }
   
   .right {
@@ -174,4 +190,116 @@
     background-image: url("../assets/img/buy/parallax.jpg");
     background-size: cover;
     background-attachment: fixed;
+  }
+
+  @media (max-width: 1480px){ /*till 1024px */
+    .buy-container {
+      display :flex;
+      width: 100%;
+      justify-content: center;
+      column-gap: 80px;
+      align-items: flex-start;
+      margin-top: 60px;
+    }
+
+    .ticket-type-set {
+      display: none;
+    }
+
+    .buy-img-container {
+      width: 700px;
+      height: 440px;
+      overflow: hidden;
+    }
+
+    .buy-img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: -47px;
+    }
+
+    .amount-fieldset {
+      padding-right: 29px;
+      width: 204px;
+    }
+
+    .right {
+      text-align: left;
+  }
+
+  .age-container {
+    margin-right: auto;
+    margin-left: 0;
+    width: 150px;
+  }
+  .total {
+    margin-top: 24px;
+    text-align: left;
+  }
+
+  .number-container {
+
+    align-items: center;
+    width: 175px;
+    padding: 15px 14px;
+  }
+
+  .mt {
+    margin-top: 27px;
+  }
+
+  .black-button {
+    margin-top: 65px;
+  }
+
+  .parallax {
+    margin-top: 57px;
+    background-size: auto 115%;
+    background-position-x: center;
+  }
+  
+  }
+
+  
+
+  @media (max-width: 1023px){ /* 1023px - 768px */
+    .buy-container {
+      margin-top: 40px;
+      column-gap: 60px;
+    }
+    .amount-fieldset {
+      padding-right: 49px;
+    }
+
+    .buy-img {
+      top: 0;
+    }
+
+    .buy-amount-header {
+      margin-bottom: 37px;
+    }
+    .mt {
+      margin-top: 22px;
+  }
+
+  .total {
+    margin-top: 36px;
+  }
+  
+  .black-button {
+    margin-top: 37px;
+  }
+
+  .parallax {
+    margin-top: 30px;
+    background-size: auto 90%;
+    height: 300px;
+  }
+  
+  }
+
+  @media (max-width: 767px){
+
+
   }
