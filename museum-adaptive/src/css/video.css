@@ -29,6 +29,7 @@
   }
 
   .current-video {
+    display: block;
     width: 1440px;
     height: 650px;
   }
@@ -64,34 +65,28 @@
   .player-btn {
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    padding: 0;
+    margin: 0;
   }
   
   .player-play-btn {
     width: 23px;
     height: 31px;
-  
-    background-image: url("../assets/svg/play-small.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+  }
+
+  .player-play-imgbtn, .player-volume-imgbtn, .player-fullscreen-imgbtn {
+    width: auto;
+    height: 100%;
   }
   
   .player-volume-btn {
     width: 38px;
     height: 31px;
-    background-image: url("../assets/svg/volume.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
   }
-  
+
   .player-fullscreen {
     width: 35px;
     height: 35px;
-    background-image: url("../assets/svg/fullscreen-icon.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
   }
   
   .player-range {
@@ -142,16 +137,30 @@
     width: 452px;
     height: 254px;
   }
+
+  iframe {
+    width: 452px;
+    height: 254px;
+  }
   
   .playlist-slider {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 18px;
     justify-content: space-between;
     width: 200px;
     height: 12px;
-    margin: 36px auto 0 auto;
+    margin: 41px auto 0 auto;
     
+  }
+
+  .playlist-bullets {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    height: 12px;
+    margin: 0
   }
 
   .playlist-bullets .slider-pagination-bullet {
@@ -254,15 +263,134 @@
       height: 26px;
     }
 
+    /* playlist */
+
+    .playlist {
+      gap: 41px;
+      width: 100%;
+    }
 
     .iframe-playlist-item {
-      width: 300px;
-      height: 170px;
+      width: 100%;
+      padding-top: 17.3%;
+      height: unset;
+      position: relative;
+  }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+    .slide-column3 {
+      display: block;
     }
+
+    .playlist-slider {
+      margin: 41px auto 0 auto;
+  }
   }
 
   @media (max-width: 1023px){ /* 1023px - 768px */
+    .video-text-content {
+      margin-bottom: -5px;
+  }
+    .playlist-bullets .slider-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
 
+    .play-video-big-btn {
+      width: 80px;
+      height: 80px;
+      background-size: contain;
+    }
+
+    .video-player {
+      margin-bottom: 20px;
+    }
+
+    /*playlist */
+    #playlist-slider {
+      margin-bottom: 40px;
+    }
+    .playlist {
+      gap: 20px;
+      width: 100%;
+    }
+
+    .iframe-playlist-item {
+      width: 100%;
+      padding-top: 27.2%;
+      height: unset;
+      position: relative;
+  }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+    .slide-column3 {
+      display: none;
+    }
+
+    .playlist-slider {
+      margin: 21px auto 0 auto;
+  }
+
+    /* player */
+    .player-controls {
+      width: 100%;
+      height: 53px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 4px;
+      position: relative;
+      justify-content: center;
+      gap: 35px;
+  }
+    .player-range {
+      height: 5px;
+    }
+    .player-time-range {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .player-volume-range {
+      width: 100%;
+    }
+
+    .player-range::-webkit-slider-thumb {
+      width: 13px; /* Set a specific slider handle width */
+      height: 13px; /* Slider handle height */
+    }
+    
+    .player-range::-moz-range-thumb {
+      width: 13px; /* Set a specific slider handle width */
+      height: 13px; /* Slider handle height */
+    }
+
+    .player-play-btn {
+      width: 23px;
+      height: 29px;
+    }
+    
+    .player-volume-btn {
+      width: 27px;
+      height: 21px;
+    }
+    .player-fullscreen {
+      width: 27px;
+      height: 27px;
+    }
   }
 
   @media (max-width: 767px){

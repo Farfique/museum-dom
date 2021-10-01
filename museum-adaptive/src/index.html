@@ -195,25 +195,30 @@
                         <button class="play-video-big-btn"></button>
                     </div>
                     <div class="player-controls">
-                        <button class="player-btn player-play-btn"></button>
+                        <button class="player-btn player-play-btn"><img class="player-play-imgbtn" src="assets/svg/play-small.svg" alt=""></button>
                         <input class="player-range player-time-range" type="range" value="53" min="0" max="100"
                             step="1">
-                        <button class="player-btn player-volume-btn"></button>
+                        <button class="player-btn player-volume-btn"><img class="player-volume-imgbtn" src="assets/svg/volume.svg" alt=""></button>
                         <input class="player-range player-volume-range" type="range" value="43" min="0" max="100"
                             step="1">
-                        <button class="player-btn player-fullscreen"></button>
+                        <button class="player-btn player-fullscreen"><img class="player-fullscreen-imgbtn" src="assets/svg/fullscreen-icon.svg" alt=""></button>
                     </div>
                 </div>
                 <div class="slider" id="playlist-slider">
                     <div class="slider-wrapper playlist-wrapper playlist">
-                        <iframe class="slide iframe-playlist-item" src="https://www.youtube.com/embed/zp1BXPX8jcU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                        <iframe class="slide iframe-playlist-item" src="https://www.youtube.com/embed/Vi5D6FKhRmo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                        <iframe class="slide iframe-playlist-item" src="https://www.youtube.com/embed/NOhDysLnTvY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                        <div class="slide iframe-playlist-item slide-column1"><iframe src="https://www.youtube.com/embed/zp1BXPX8jcU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+                        <div class="slide iframe-playlist-item slide-column2"><iframe src="https://www.youtube.com/embed/Vi5D6FKhRmo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+                        <div class="slide iframe-playlist-item slide-column3"><iframe src="https://www.youtube.com/embed/NOhDysLnTvY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
                     </div>
 
                     <div class="slider-controls playlist-slider-controls playlist-slider">
                         <button class="slider-button-prev playlist-prev"></button>
                         <div class="slider-pagination-bullets playlist-bullets">
+                            <span class="slider-pagination-bullet slider-pagination-bullet-active"></span>
+                            <span class="slider-pagination-bullet"></span>
+                            <span class="slider-pagination-bullet"></span>
+                            <span class="slider-pagination-bullet"></span>
+                            <span class="slider-pagination-bullet"></span>
                         </div>                               
                         <button class="slider-button-next playlist-next"></button>                                                
                     </div>
