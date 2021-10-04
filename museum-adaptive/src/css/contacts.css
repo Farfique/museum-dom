@@ -1,6 +1,7 @@
 /* contacts */
 #contacts {
     padding-top: 0;
+    padding-bottom: 70px;
   }
   
   .contacts-content {
@@ -14,6 +15,7 @@
   }
   
   .contacts-header{
+    margin-bottom: 41px;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -25,7 +27,7 @@
   .contact-text {
     display: inline-block;
     margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 14px;
   
     font-family: Roboto, sans-serif;
     font-size: 22px;
@@ -35,4 +37,92 @@
     text-align: left;
     text-decoration: none;
     color: inherit;
+  }
+
+  @media (max-width: 1480px){ /*till 1024px */
+    #contacts {
+      padding-top: 0;
+      padding-bottom: 62px;
+  }
+    
+    .contacts-content {
+      margin-top: 60px;
+      grid-template-columns: max-content 1fr;
+    }
+
+    .contact-info {
+      width: 274px;
+  }
+
+    .contacts-header{
+      margin-bottom: 25px;
+      
+
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.1px;
+    }
+    
+    .contact-text {      
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 23px;
+
+    }
+
+    .map-container {
+      position: relative;
+      height: 454px;
+      overflow-y: hidden;
+  }
+
+    .contacts-map {
+      position: absolute;
+      right: 0px;
+  }
+
+  }
+
+  @media (max-width: 1023px){ /* 1023px - 768px */
+    #contacts {
+      padding-bottom: 41px;
+    }
+
+    .contacts-content {
+      margin-top: 40px;
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content 1fr;
+      row-gap: 34px;
+    }
+
+    .contacts-header{
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.1px;
+      max-width: 200px;
+      text-align: left;
+    }
+    
+    .contact-text {      
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      line-height: 21px;
+
+    }
+
+    .map-container {
+      height: 478px;
+      margin-bottom: 25px;
+    }
+
+    .contacts-map {
+      top: -6px;
+    }
+
+
   }

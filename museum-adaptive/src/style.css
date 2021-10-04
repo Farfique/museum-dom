@@ -41,6 +41,10 @@ h2 {
   margin-bottom: 25px;
 }
 
+h2:hover {
+  color: #9D8665;
+}
+
 h3 {
   position: relative;
   margin-top: 22px;
@@ -64,6 +68,12 @@ h3::after {
   height: 2px;
   width: 300px;
   background-color: #710707;
+  transition: 0.2s;
+}
+
+.gallery-card:hover h3::after{
+  width: 100%;
+  transition: 0.2s;
 }
 
 h4 {
@@ -148,6 +158,23 @@ p {
 .mb25 {
   margin-bottom: 25px;
 }
+
+/* intercactivity */
+a:hover {
+  color: #9D8665;
+  transition: 0.1s;
+}
+a:active {
+  color: #7E6C51;
+}
+
+.red-button:hover {
+  background-color: #9D8665;
+  color: #FFFFFF;
+  transition: 0.1s;
+}
+
+
 
 @media (max-width: 1480px){
   /* headers */

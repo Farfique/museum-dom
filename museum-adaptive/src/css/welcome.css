@@ -132,7 +132,10 @@
     padding: 0;
     border: none;
     background-color: black;
+    transition: 0.1s;
+    cursor: pointer;
   }
+
 
   .welcome-next {
     display: block;
@@ -143,6 +146,8 @@
     padding: 0;
     border: none;
     background-color: black;
+    transition: 0.1s;
+    cursor: pointer;
   }
 
   @media (max-width: 1480px){ /*till 1024px */
