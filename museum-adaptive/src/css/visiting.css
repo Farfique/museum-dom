@@ -53,7 +53,10 @@
   }
 
   @media (max-width: 767px){
-
+    .virtual-gallery {
+      margin-top: 39px;
+      margin-bottom: 36px;
+    }
 
   }
   

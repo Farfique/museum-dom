@@ -425,7 +425,80 @@
   }
 
   @media (max-width: 767px){
-
-
+    .video-text-content {
+      margin-bottom: -7px;
   }
-  
+
+  .video-player {
+    margin-bottom: 40px;
+}
+    .play-video-big-btn {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+      top: -5px;
+  }
+
+  .player-controls {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
+  }
+
+  .player-play-btn {
+    width: 14px;
+    height: 18px;
+  }
+  .player-volume-btn {
+    width: 18px;
+    height: 14px;
+  }
+
+  .player-fullscreen {
+    width: 18px;
+    height: 18px;
+  }
+  .player-range {
+    height: 4px;
+}
+
+.player-range::-webkit-slider-thumb {
+  width: 10px; /* Set a specific slider handle width */
+  height: 10px; /* Slider handle height */
+}
+
+.player-range::-moz-range-thumb {
+  width: 10px; /* Set a specific slider handle width */
+  height: 10px; /* Slider handle height */
+}
+
+.player-time-range {
+  top: -4px;
+  }
+
+  .playlist-bullets .slider-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .playlist-next, .playlist-prev {
+    width: 7px;
+    height: 8px;
+    background-size: contain;
+  }
+
+  .playlist-slider {
+    margin: 38px auto 0 auto;
+    width: 180px;
+}
+
+#video {
+  padding-bottom: 1px;
+}
+
+#playlist-slider {
+  margin-bottom: 36px;
+}
+
+}

@@ -346,11 +346,34 @@ p {
     font-weight: normal;
     line-height: 40px;
   }
+  h3{
+    font-size: 18px;
+    line-height: 20px;    
+    letter-spacing: 5px;
+  }
+
+  h3.long-title {
+    letter-spacing: 5px;
+}
+  h3::after{
+    bottom: -11px;
+  }
 
   h4 {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     margin: 0;
+  }
+
+  h5 {
+    margin-top: 22px;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .section {
+    padding-bottom: 1px;
   }
 }

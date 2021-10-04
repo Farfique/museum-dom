@@ -308,5 +308,74 @@
 
   @media (max-width: 767px){
 
+    .buy-container {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 40px;
+  }
+  .buy-img-container {
+    width: 100%;
+    height: 160px;
+  }
+  .buy-img {
+    top: -67px;
+}
 
+.buy-tickets-header {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.buy-form {
+  justify-content: center;
+}
+
+.age-container {
+  margin-right: auto;
+  margin-left: 14px;
+  width: 150px;
+}
+
+.amount-fieldset {
+  padding-right: 0px;
+}
+
+.buy-paragraph {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.buy-amount-header {
+  margin-bottom: 19px;
+}
+
+.buy-legend {
+  margin-bottom: 15px;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.total {
+  text-align: center;
+  margin-top: 40px;
+}
+.space-total, .total-sum {
+  letter-spacing: 0.5px;
+}
+
+.black-button {
+  margin-top: 39px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parallax {
+  margin-top: 36px;
+  margin-bottom: 40px;
+}
   }

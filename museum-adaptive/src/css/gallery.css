@@ -68,5 +68,8 @@
   @media (max-width: 767px){
 
 
+    .gallery {
+      height: 637px;
+    }
   }
 

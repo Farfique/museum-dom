@@ -126,3 +126,22 @@
 
 
   }
+
+  @media (max-width: 767px){
+    .contacts-header {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .contact-text {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .map-container {
+      height: 245px;
+      margin-bottom: 2px;
+    }
+  }

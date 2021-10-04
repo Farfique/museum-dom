@@ -14,4 +14,14 @@ playerVolumeRange.addEventListener('input', function() {
   this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #ffffff ${value}%, #ffffff 100%)`
 })
 
+
 Pagination();
+
+const menuItems = document.querySelectorAll('.menu-item');
+const menuToggle = document.querySelector('#menu__toggle');
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', () => {
+    menuToggle.checked = false;
+  })
+})

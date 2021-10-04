@@ -79,6 +79,8 @@
   }
 
   @media (max-width: 767px){
-
+    .explore-picture{
+      margin-bottom: 39px;
+    }
 
   }
