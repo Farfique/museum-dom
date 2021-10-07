@@ -51,11 +51,86 @@
     overflow: hidden;
   }
 
-  .welcome-wrapper .active-slide {
+  .welcome-wrapper .slide {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 100%;
   }
+
+  .welcome-wrapper .active-slide {
+
+    top: 0;
+    left: 0;
+
+  }
+
+  /* animation */
+
+  .welcome-hiding-to-left {
+    animation-duration: 0.5s;
+    animation-name: slideoutnext;
+  }
+
+  .welcome-hiding-to-right {
+    animation-duration: 0.5s;
+    animation-name: slideoutprev;
+  }
+
+  .welcome-sliding-to-left {
+    animation-duration: 0.5s;
+    animation-name: nextslidein;
+  }
+  
+  .welcome-sliding-to-right {
+    animation-duration: 0.5s;
+    animation-name: prevslidein;
+  }
+
+  @keyframes nextslidein {
+    from {
+      left: 100%;
+    }
+  
+    to {
+      left: 0;
+    }
+
+  }
+
+  @keyframes prevslidein {
+    from {
+      left: -100%;
+    }
+  
+    to {
+      left: 0;
+    }
+
+  }
+
+  @keyframes slideoutnext {
+    from {
+      left: 0;
+    }
+  
+    to {
+      left: -100%;
+    }
+  }
+
+  @keyframes slideoutprev {
+    from {
+      left: 0;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+
+
+
+
   .welcome-controls-container {
     width: 600px;
     height: 120px;
