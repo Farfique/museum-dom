@@ -33,8 +33,10 @@
 
   .current-video {
     display: block;
-    width: 1440px;
-    height: 650px;
+    /*width: 1440px;
+    height: 650px;*/
+    width: 100%;
+    height: auto;
     object-fit: cover;
   }
 
@@ -139,7 +141,7 @@
   
   .player-volume-range {
     width: 155px;
-    background: linear-gradient(to right, #710707 0%, #710707 43%, #c4c4c4 43%, #c4c4c4 100%);
+    background: linear-gradient(to right, #710707 0%, #710707 23%, #c4c4c4 23%, #c4c4c4 100%);
   }
   
   .player-range::-webkit-slider-thumb {
@@ -173,7 +175,7 @@
     height: 254px;
   }
 
-  iframe {
+  .video-iframe {
     width: 452px;
     height: 254px;
   }
@@ -366,7 +368,7 @@
       height: unset;
       position: relative;
   }
-    iframe {
+  .video-iframe  {
       position: absolute;
       top: 0;
       left: 0;
@@ -421,7 +423,7 @@
       height: unset;
       position: relative;
   }
-    iframe {
+  .video-iframe  {
       position: absolute;
       top: 0;
       left: 0;

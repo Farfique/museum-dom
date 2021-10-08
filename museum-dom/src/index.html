@@ -240,18 +240,18 @@
                         <input class="player-range player-time-range" type="range" value="53" min="0" max="100"
                             step="1">
                         <button class="player-btn player-volume-btn"><img class="player-volume-imgbtn" src="assets/svg/volume.svg" alt=""></button>
-                        <input class="player-range player-volume-range" type="range" value="43" min="0" max="100"
+                        <input class="player-range player-volume-range" type="range" value="23" min="0" max="100"
                             step="1">
                         <button class="player-btn player-fullscreen"><img class="player-fullscreen-imgbtn" src="assets/svg/fullscreen-icon.svg" alt=""></button>
                     </div>
                 </div>
                 <div class="slider" id="playlist-slider">
                     <div class="slider-wrapper playlist-wrapper playlist">
-                        <div class="slide active-slide iframe-playlist-item"><iframe src="https://www.youtube.com/embed/zp1BXPX8jcU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-                        <div class="slide iframe-playlist-item"><iframe src="https://www.youtube.com/embed/Vi5D6FKhRmo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-                        <div class="slide iframe-playlist-item"><iframe src="https://www.youtube.com/embed/NOhDysLnTvY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-                        <div class="slide iframe-playlist-item"><iframe src="https://www.youtube.com/embed/aWmJ5DgyWPI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-                        <div class="slide iframe-playlist-item"><iframe src="https://www.youtube.com/embed/2OR0OCr6uRE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+                        <div class="slide active-slide iframe-playlist-item"><iframe class="video-iframe" src="https://www.youtube.com/embed/zp1BXPX8jcU?controls=0&enablejsapi=1&origin=http://localhost:8080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="slide iframe-playlist-item"><iframe class="video-iframe" src="https://www.youtube.com/embed/Vi5D6FKhRmo?controls=0&enablejsapi=1&origin=http://localhost:8080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="slide iframe-playlist-item"><iframe class="video-iframe" src="https://www.youtube.com/embed/NOhDysLnTvY?controls=0&enablejsapi=1&origin=http://localhost:8080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="slide iframe-playlist-item"><iframe class="video-iframe" src="https://www.youtube.com/embed/aWmJ5DgyWPI?controls=0&enablejsapi=1&origin=http://localhost:8080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
+                        <div class="slide iframe-playlist-item"><iframe class="video-iframe" src="https://www.youtube.com/embed/2OR0OCr6uRE?controls=0&enablejsapi=1&origin=http://localhost:8080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
                     </div>
 
                     <div class="slider-controls playlist-slider-controls playlist-slider">
@@ -363,7 +363,7 @@
                         </a>
                         <a class="contact-text" href="mailto:info@louvre.fr">mail: info@louvre.fr</a>
                     </div>
-                    <div class="map-container"><img class="contacts-map" src="images/map.jpg" alt="map"></div>
+                    <div class="map-container" id="map"><iframe class="map-iframe" width="100%" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/en/map/louvre_666104?scaleControl=true&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=undefined&captionBar=false#17/48.86091/2.3364"></iframe></div>
                 </div>
             </div>
         </section>
