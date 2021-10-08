@@ -7,7 +7,8 @@
   .contacts-content {
     margin-top: 75px;
     display: grid;
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: max-content 1fr;
+    column-gap: 169px;
   }
   
   .contact-info {
@@ -37,6 +38,16 @@
     text-align: left;
     text-decoration: none;
     color: inherit;
+  }
+
+  .map-container {
+    position: relative;
+    height: 620px;
+    overflow-y: hidden;
+}
+
+  .map-iframe {
+    height: 100%;
   }
 
   @media (max-width: 1480px){ /*till 1024px */
@@ -79,10 +90,14 @@
       overflow-y: hidden;
   }
 
+ 
+
     .contacts-map {
       position: absolute;
       right: 0px;
   }
+
+
 
   }
 

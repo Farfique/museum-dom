@@ -13,4 +13,4 @@ menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', () => {
     menuToggle.checked = false;
   })
-})
+});
