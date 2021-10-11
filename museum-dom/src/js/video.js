@@ -17,7 +17,6 @@ export default function video() {
 
     let slider = document.querySelector('#playlist-slider');
     let activeSlide;
-    console.log("active slide = ", activeSlide);
 
     let mainVideo = document.querySelector('.main-video');
     buildView();
@@ -26,7 +25,6 @@ export default function video() {
 
 
     slider.addEventListener('changeActiveSlide', (e) => {
-        console.log('active slide has changed');
         buildView();
 
     });
@@ -163,8 +161,6 @@ export default function video() {
             playerTimeRange.addEventListener('input', function () {
                 video.currentTime = this.value;
                 updateTimeRangeStyle(this.value);
-                console.log("this.value = ", this.value);
-                console.log('max = ', playerTimeRange.max);
                 if (this.value == Math.floor(playerTimeRange.max)){
                     playerTimeRange.value = playerTimeRange.max;
                     video.currentTime = playerTimeRange.max;
@@ -190,9 +186,7 @@ export default function video() {
             })
 
             slider.addEventListener('mainVideoChanged', () => {
-                console.log("main video has changed");
-
-                
+                //console.log("main video has changed");
 
             })
 
@@ -203,8 +197,6 @@ export default function video() {
              });
 
             video.addEventListener('loadedmetadata', function() {
-                console.log("loaded metadata");
-
                 playBigBtn.style.display = 'block';
                 volumeBtn.firstChild.setAttribute('src', 'assets/svg/volume.svg');
                 playSmallBtn.firstChild.setAttribute('src', 'assets/svg/play-small.svg');
@@ -215,10 +207,7 @@ export default function video() {
 
              document.addEventListener('keydown', (e) => {
 
-                console.log("key code = ", e.code);
-
                 if (e.code == 'Comma' && e.shiftKey){
-                    console.log('speed up!');
                     video.playbackRate += (video.playbackRate < 2.0)? 0.25 : 0;
                     playbackMessage.innerText = video.playbackRate + "x";
                     playbackMessage.style.display = 'inline-block';
@@ -228,7 +217,6 @@ export default function video() {
 
                 }
                 if (e.code == 'Period' && e.shiftKey){
-                    console.log('slow down!');
                     video.playbackRate -= (video.playbackRate > 0.25)? 0.25 : 0;
                     playbackMessage.innerText = video.playbackRate + "x";
                     playbackMessage.style.display = 'inline-block';
@@ -238,15 +226,12 @@ export default function video() {
                 }
                 if (e.code == 'Space'){
                     e.preventDefault();
-                    console.log('pause / play');
                     playPauseVideo();
                 }
                 if (e.code == 'KeyM'){
-                    console.log("MUTE!");
                     mute();
                 }
                 if (e.code == 'KeyF'){
-                    console.log('FULLSCREEN!');
                     toggleFullscreen();
                 }
              });

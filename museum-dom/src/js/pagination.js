@@ -42,7 +42,7 @@ function Pagination (sliderId, prefix) {
         slide.classList.remove("active-slide");
 
         slide.addEventListener('animationend', () => {
-            console.log("animation-hiding-end");
+            //console.log("animation-hiding-end");
             slide.classList.remove(prefix + '-hiding-' + direction);
             
             
@@ -60,7 +60,7 @@ function Pagination (sliderId, prefix) {
         }
         
         slide.addEventListener('animationend', () => {
-            console.log("animation-sliding-end");
+            //console.log("animation-sliding-end");
             slide.classList.remove(prefix + '-sliding-' + direction);
            
         }, {once: true});
@@ -139,14 +139,10 @@ function Pagination (sliderId, prefix) {
 
 
     buttonNext.addEventListener('click', () => {
-        console.log("button next clicked");
-
         goToNext();
     });
 
     buttonPrev.addEventListener('click', () => {
-        console.log("button prev clicked");
-
         goToPrev();
     })
 

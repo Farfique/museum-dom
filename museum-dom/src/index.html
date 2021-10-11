@@ -302,8 +302,7 @@
                         <fieldset class="buy-fieldset ticket-type-set">
                             <h4 class="buy-tickets-header mb50">Ticket Type</h4>
                             <p class="buy-paragraph buy-options">
-                                <input type="radio" name="ticket-type" value="permanent" id="permanent-exhibition"
-                                    checked>
+                                <input type="radio" name="ticket-type" value="permanent" id="permanent-exhibition">
                                 <label class="ticket-type-label" for="permanent-exhibition">Permanent exhibition</label>
                             </p>
                             <p class="buy-paragraph buy-options">
@@ -320,23 +319,19 @@
                             <div class="age-container">
                                 <p class="buy-paragraph buy-legend">Basic 18+</p>
                                 <div class="number-container">
-                                    <button class="number-button"
-                                        onclick="this.nextElementSibling.stepDown()">–</button>
+                                    <button class="number-button basic-less less">–</button>
                                     <input type="number" min="0" max="20" value="1" readonly
                                         class="number-input basic-amount">
-                                    <button class="number-button"
-                                        onclick="this.previousElementSibling.stepUp()">+</button>
+                                    <button class="number-button basic-more more">+</button>
                                 </div>
                             </div>
                             <div class="age-container mt">
                                 <p class="buy-paragraph buy-legend">Senior 65+</p>
                                 <div class="number-container">
-                                    <button class="number-button"
-                                        onclick="this.nextElementSibling.stepDown()">–</button>
+                                    <button class="number-button senior-less less">–</button>
                                     <input type="number" min="0" max="20" value="1" readonly
                                         class="number-input senior-amount">
-                                    <button class="number-button"
-                                        onclick="this.previousElementSibling.stepUp()">+</button>
+                                    <button class="number-button senior-more more">+</button>
                                 </div>
                             </div>
                             <div class="total">
