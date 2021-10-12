@@ -12,54 +12,54 @@ let slider = document.querySelector('.explore-slider');
 slider.style.left = (width / 2) - (slider.offsetWidth / 2) + "px";
 
 
-slider.addEventListener("mousedown", slideReady);
+slider.addEventListener("mousedown", startListenSlider);
 
-window.addEventListener("mouseup", slideFinish);
+window.addEventListener("mouseup", stopSlider);
     
-slider.addEventListener("touchstart", slideReady);
+slider.addEventListener("touchstart", startListenSlider);
      
-window.addEventListener("touchstop", slideFinish);
+window.addEventListener("touchstop", stopSlider);
 
-function slideReady(e) {
+function startListenSlider(event) {
     
-    e.preventDefault();
+    event.preventDefault();
     
-    clicked = 1;
+    clicked = true;
     
-    window.addEventListener("mousemove", slideMove);
-    window.addEventListener("touchmove", slideMove);
+    window.addEventListener("mousemove", moveSlider);
+    window.addEventListener("touchmove", moveSlider);
 }
 
-function slideFinish() {
-    clicked = 0;
+function stopSlider() {
+    clicked = false;
 }
-function slideMove(e) {
-    var pos;
+function moveSlider(event) {
+    let position;
     
     
-    if (clicked == 0) return false;
+    if (clicked == false) 
+        return false;    
+    
+    position = getCursorPosition(event)
     
     
-    pos = getCursorPos(e)
+    if (position < 0) 
+        position = 0;
+
+    if (position > width) 
+        position = width;
     
-    
-    if (pos < 0) pos = 0;
-    if (pos > width) pos = width;
-    
-    
-    slide(pos);
+    moveSliderToPosition(position);
 }
-function getCursorPos(e) {
-    var a, x = 0;
-    e = e || window.event;
+function getCursorPosition(event) {
+    let domRectangle;
+    event = event || window.event;
    
-    a = imgBefore.getBoundingClientRect();
-    
-    x = e.pageX - a.left;
-    x = x - window.pageXOffset;
-    return x;
+    domRectangle = imgBefore.getBoundingClientRect();
+
+    return event.pageX - domRectangle.left - window.pageXOffset;
 }
-function slide(x) {
+function moveSliderToPosition(x) {
 
     imgBefore.style.width = x + "px";
 
