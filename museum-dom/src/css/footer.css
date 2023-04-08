@@ -84,6 +84,16 @@
     text-align: center;
     line-height: 42px;
   }
+
+  .socials-link:hover {
+    background-color: #9D8665;
+    transition: 0.1s;
+  }
+
+  .socials-link:active {
+    background-color: #7E6C51;
+    transition: 0.1s;
+  }
   
   .socials-img {
     margin: auto;
